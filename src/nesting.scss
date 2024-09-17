@@ -1,0 +1,48 @@
+main {
+    .container & {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    &:hover {
+        background-color: salmon;
+    }
+
+    background-color: lightblue;
+
+    .main-heading {
+        font-size: 2em;
+    }
+
+    .main-paragraph {
+        font-size: 1.5em;
+    }
+}
+
+main,
+footer {
+
+    h1,
+    p {
+        letter-spacing: 1px;
+    }
+}
+
+.main {
+    #{&}-heading {
+        font-style: italic;
+    }
+
+    #{&}-paragraph {
+        font-weight: bold;
+    }
+}
+
+.footer {
+    & &-heading {
+        font-variant: small-caps;
+    }
+
+    & &-paragraph {
+        font-family: 'Courier New', Courier, monospace;
+    }
+}
