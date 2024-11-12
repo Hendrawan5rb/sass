@@ -32,19 +32,6 @@ header ul {
     }
 }
 
-footer ul {
-    @include inline-list();
-
-    li {
-        background-color: salmon;
-        padding: 0.7rem;
-
-        a {
-            color: white;
-        }
-    }
-}
-
 .container {
     @include flex-box(row-reverse, space-evenly);
 
@@ -58,5 +45,18 @@ footer ul {
         background-color: khaki;
         text-align: center;
         line-height: 60px;
+    }
+}
+
+footer ul {
+    @include inline-list();
+
+    li {
+        background-color: salmon;
+        padding: 0.7rem;
+
+        a {
+            color: white;
+        }
     }
 }

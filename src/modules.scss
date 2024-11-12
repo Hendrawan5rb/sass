@@ -1,0 +1,16 @@
+// Modules adalah sebuah metode/cara agar kode SASS kita modular atau mudah untuk dikelola.
+// File SASS yang namanya diawali dengan underscore(_) adalah file Partials dan tidak akan di-compile.
+
+// Penggunaan @import sudah tidak direkomendasikan oleh SASS, lebih disarankan menggunakan @use.
+// Perbedaan antara import SASS dan CSS adalah import milik CSS lebih lengkap dengan extension, contoh : modules/mixin.css
+// @import 'modules/mixin';
+// @import 'modules/header';
+// @import 'modules/main';
+// @import 'modules/footer';
+
+// Sama kayak yang atas
+// @import 'modules/mixin', 'modules/header', 'modules/main', 'modules/footer';
+
+@use 'modules/header';
+@use 'modules/main';
+@use 'modules/footer';

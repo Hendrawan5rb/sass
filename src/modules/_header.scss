@@ -1,0 +1,16 @@
+// Alias
+@use 'mixin/mixin' as m;
+
+header ul {
+    @include m.inline-list();
+
+    li {
+        background-color: black;
+        padding: 0.5rem;
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
