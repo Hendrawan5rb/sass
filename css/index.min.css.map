@@ -1,0 +1,1 @@
+{"version":3,"sources":["..\\src\\index.scss"],"names":[],"mappings":"AAEA,OACI,uBAHI,CAKJ,UACI,aAAA,CAGJ,SACI,YAVA","file":"index.min.css","sourcesContent":["$color: salmon;\r\n\r\nheader {\r\n    background-color: $color;\r\n\r\n    h1 {\r\n        font-size: 3em;\r\n    }\r\n\r\n    p {\r\n        color: $color;\r\n    }\r\n}"]}

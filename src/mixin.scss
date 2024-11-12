@@ -1,0 +1,62 @@
+// Mixin adalah kumpulan style yang dapat kita gunakan berulang-ulang.
+// SASS memiliki Mixin dan Function, kedua hal tersebut adalah hal yang berbeda.
+
+@mixin inline-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+        display: inline-block;
+    }
+}
+
+@mixin flex-box($direction: row, $space: center) {
+    display: flex;
+    justify-content: $space;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+header ul {
+    @include inline-list();
+
+    li {
+        background-color: black;
+        padding: 0.5rem;
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+footer ul {
+    @include inline-list();
+
+    li {
+        background-color: salmon;
+        padding: 0.7rem;
+
+        a {
+            color: white;
+        }
+    }
+}
+
+.container {
+    @include flex-box(row-reverse, space-evenly);
+
+    width: 600px;
+    height: 400px;
+    background-color: #EAEAEA;
+
+    .box {
+        width: 60px;
+        height: 60px;
+        background-color: khaki;
+        text-align: center;
+        line-height: 60px;
+    }
+}
