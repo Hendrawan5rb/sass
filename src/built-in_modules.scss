@@ -1,0 +1,50 @@
+$base-color: salmon;
+
+h1 {
+    // color: $base-color;
+    color: adjust-color($color: $base-color, $green: 50, $blue: -25);
+}
+
+h2 {
+    // color: $base-color;
+
+    // Derajat positif: berlawanan arah jarum jam
+    // Derajat negatif: searah jarum jam
+    color: adjust-hue($base-color, -60deg);
+}
+
+h3 {
+    // Warna kebalikannya (180 derajat)
+    color: complement($base-color);
+}
+
+h4 {
+    // color: $base-color;
+
+    // Tingkat kemurnian warna
+    color: saturate($base-color, 20%)
+}
+
+h5 {
+    color: desaturate($base-color, 50%);
+}
+
+h6 {
+    // Desaturate 100%
+    color: grayscale($base-color);
+}
+
+p {
+    // Persentase adalah milik warna pertama
+    color: mix($base-color, blue, 50%);
+}
+
+span {
+    // Membuat warna menjadi solid
+    color: fade-in(rgba(250, 128, 144, 0.2), 0.5);
+}
+
+div {
+    // Membuat warna menjadi transparan
+    color: fade-out($base-color, 0.7);
+}
